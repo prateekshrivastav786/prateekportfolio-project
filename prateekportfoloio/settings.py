@@ -144,3 +144,9 @@ STATIC_URL = '/static/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')   # folder where all the image will be store, also it is under .gitignore
 
 MEDIA_URL = '/media/' # this is where images will be reterived , like url
+
+
+try:
+    from local_settings import *
+except ImportError:
+    pass
