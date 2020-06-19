@@ -147,6 +147,6 @@ MEDIA_URL = '/media/' # this is where images will be reterived , like url
 
 
 try:
-    from local_settings import *
+    from .local_settings import *
 except ImportError:
     pass
